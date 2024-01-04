@@ -1,0 +1,95 @@
+Favela01 {
+    cocaine = wheatflour
+    c4 = {
+        ["techtrash"] = 1,
+        ["explosives"] = 5,
+        ["sheetmetal"] = 1,
+        ["pliers"] = 1
+    }
+    dol = alcohol
+}
+
+Favela02 {
+    joint = {
+        ["silk"] = 5,
+        ["weedsack"] = 1
+    }
+    pager = vpn
+    fidentity = paper 15
+}
+
+Favela03 {
+    dol = alcohol
+    coca = wheatflour
+    pager = vpn
+}
+
+Favela04 {
+    dol = alcohol
+    fidentity = paper 15
+    pager = vpn
+}
+
+Favela05 {
+    plate = sheetmetal 3
+    hood = {
+        ["leather"] = 150,
+        ["tarp"] = 10
+    }
+    vest = {
+        ["tarp"] = 1,
+        ["roadsigns"] = 4,
+        ["leather"] = 12,
+        ["sheetmetal"] = 5
+    }
+}
+
+Favela06 {
+    joint = {
+        ["silk"] = 5,
+        ["weedsack"] = 1
+    }
+    hood = {
+        ["leather"] = 150,
+        ["tarp"] = 10
+    }
+    vest = {
+        ["tarp"] = 1,
+        ["roadsigns"] = 4,
+        ["leather"] = 12,
+        ["sheetmetal"] = 5
+    }
+}
+
+Favela07 {
+    coca = wheatflour
+    C4 = {
+        ["techtrash"] = 1,
+        ["explosives"] = 5,
+        ["sheetmetal"] = 1,
+        ["pliers"] = 1
+    }
+    hood = {
+        ["leather"] = 150,
+        ["tarp"] = 10
+    }
+}
+
+Favela08 {
+    joint = {
+        ["silk"] = 5,
+        ["weedsack"] = 1
+    }
+    C4 = {
+        ["techtrash"] = 1,
+        ["explosives"] = 5,
+        ["sheetmetal"] = 1,
+        ["pliers"] = 1
+    }
+    vest = {
+        ["tarp"] = 1,
+        ["roadsigns"] = 4,
+        ["leather"] = 12,
+        ["sheetmetal"] = 5
+    }
+}

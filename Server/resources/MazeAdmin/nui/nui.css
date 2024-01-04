@@ -1,0 +1,838 @@
+@import url('https://fonts.cdnfonts.com/css/gilgan');
+
+body {
+    user-select: none;
+    overflow: hidden;
+    font-family: 'Gilgan', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.background {
+    display: none;
+    position: absolute;
+    background: #000000; /*433E60*/
+    border-radius: 15px;
+    border: 0.3166666666666667vw solid rgb(22, 22, 22);
+    width: 60%;
+    height: 60%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.abas {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    background: #202020;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.abas .logo {
+    display: flex;
+    position: absolute;
+    bottom: 80%;
+    width: 6vw;
+    height: 6vw;
+}
+
+.abas .titulo {
+    display: flex;
+    position: absolute;
+    bottom: 77%;
+    font-size: 1.1vw;
+    font-weight: 900;
+    color: white;
+}
+
+.abas .tipos {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 10vw;
+    height: 15vw;
+    bottom: -5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.abas .tipos .quadradinhos {
+    display: flex;
+    position: relative;
+    width: 10vw;
+    height: 2vw;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.abas .tipos .quadradinhos:hover {
+   transform: scale(1.1);
+}
+
+
+.selecionado {
+    display: flex;
+    position: absolute;
+    background-color: #007BFF;
+    width: 12vw;
+    height: 2vw;
+}
+
+.principal {
+    width: 85%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.principal .nomeoficial {
+    display: flex;
+    position: absolute;
+    margin: 2% 7.3%;
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 900;
+    align-items: center;
+}
+
+.principal .nomeoficial .circulo {
+    position: absolute;
+    width: 0.3vw;
+    height: 65%;
+    left: -4%;
+    border-radius: 15px;
+    background-color: #007BFF;
+}
+
+.principal .nomeoficial span {
+    margin-left: 10px;
+    color: #007BFF;
+}
+
+.principal .quadrado {
+    display: flex;
+    position: relative;
+    width: 85%;
+    height: 30%;
+    top: 15%;
+    left: 7.5%;
+    background-color: #202020;
+    border-radius: 1vw;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.principal .quadrado .quadradinhos {
+    display: flex;
+    position: relative;
+    margin: 1.5vw;
+    width: 18%;
+    height: 70%;
+    background-color: #000000;
+    border-radius: 1vw;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.principal .quadrado .quadradinhos:hover {
+   transform: scale(1.2);
+}
+
+.principal .quadrado .quadradinhos .titulo {
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.principal .quadrado .quadradinhos .circulo {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: #007BFF;
+    justify-content: center;
+}
+
+.principal .quadrado .quadradinhos .circulo span {
+    position: absolute;
+    top: 13%;
+    font-size: 1vw;
+    font-weight: 500;
+    color: white;
+}
+
+.principal .titulotp {
+    display: flex;
+    position: absolute;
+    margin: 10.5% 64%;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 400;
+    align-items: center;
+}
+
+.principal .titulotp .circulo {
+    position: absolute;
+    width: 0.8vw;
+    height: 0.8vw;
+    left: -15%;
+    border-radius: 50%;
+    background-color: #007BFF;
+}
+
+.principal .tituloin {
+    display: flex;
+    position: absolute;
+    margin: 10.5% 8.5%;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 400;
+    align-items: center;
+}
+
+.principal .tituloin .circulo {
+    position: absolute;
+    width: 0.8vw;
+    height: 0.8vw;
+    left: -20%;
+    border-radius: 50%;
+    background-color: #007BFF;
+}
+
+.principal .quadrado2 {
+    display: flex;
+    position: relative;
+    width: 62%;
+    height: 35%;
+    top: 30%;
+    left: 7.5%;
+    background-color: #202020;
+    border-radius: 1vw;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.principal .quadrado2 .quadradu {
+    display: flex;
+    position: relative;
+    width: 40%;
+    height: 90%;
+    margin: 5%;
+    border-radius: 0.5vw;
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.principal .quadrado2 .quadradu .titulo {
+    position: absolute;
+    font-size: 1vw;
+    font-weight: 800;
+    top: 1vw;
+}
+
+.passaporte {
+    display: flex;
+    position: absolute;
+    border-color: transparent;
+    background-color: #434343;
+    width: 80%;
+    height: 15%;
+    border-radius: 0.2vw;
+    top: 3vw;
+    color: white;
+}
+
+.op1 {
+    display: flex;
+    position: absolute;
+    border-color: transparent;
+    background-color: #434343;
+    width: 83.5%;
+    height: 17%;
+    border-radius: 0.2vw;
+    top: 5.2vw;
+    color: white;
+}
+
+
+.op2 {
+    display: flex;
+    position: absolute;
+    border-color: transparent;
+    background-color: #434343;
+    width: 80%;
+    height: 15%;
+    border-radius: 0.2vw;
+    top: 5.2vw;
+    color: white;
+}
+
+.enviar {
+    display: flex;
+    position: absolute;
+    border-color: transparent;
+    background-color: #007BFF;
+    width: 84%;
+    height: 20%;
+    border-radius: 0.2vw;
+    top: 8vw;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+}
+
+.enviar:hover {
+    transform: scale(1.1);
+}
+
+
+.principal .quadrado3 {
+    display: block;
+    position: relative;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 35%;
+    left: 72.5%;
+    bottom: 5%;
+    background-color: #202020;
+    border-radius: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal .quadrado3 .limite {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.principal .quadrado3 .quadradinhos {
+    display: flex;
+    position: relative;
+    left: 5%;
+    margin-top: 7.5%;
+    width: 90%;
+    height: 12.5%;
+    border-radius: 0.5vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #434343;
+    color: white;
+}
+
+.principal .quadrado3 .quadradinhos:hover {
+    transform: scale(1.01);
+}
+
+.principal .quadrado3 .criarTP {
+    display: flex;
+    position: absolute;
+    top: 82%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.principal .quadrado3 .criarTP .criarTP2 {
+    display: flex;
+    width: 70%;
+    height: 3vh;
+    background-color: #007BFF;
+    border-radius: 0.5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal .quadrado3 .criarTP:hover {
+   transform: scale(1.1);
+}
+
+.fa-trash-alt {
+    position: absolute;
+    right: 85%;
+    color: white;
+}
+
+.fa-trash-alt:hover {
+    color: red;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.spawn {
+    width: 85%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.spawn .nomeoficial {
+    display: flex;
+    position: absolute;
+    margin: 2% 7.3%;
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 900;
+    align-items: center;
+}
+
+.spawn .nomeoficial .circulo {
+    position: absolute;
+    width: 0.3vw;
+    height: 65%;
+    left: -15%;
+    border-radius: 15px;
+    background-color: #007BFF;
+}
+
+.pesquisar {
+    display: flex;
+    position: absolute;
+    width: 33vw;
+    height: 1vw;
+    border-radius: 1vw;
+    border-color: transparent;
+    background-color: #434343;
+    color: white;
+    margin: 8% 20.9%;
+    padding: 0% 1%;
+}
+
+.qtd {
+    display: flex;
+    position: absolute;
+    width: 7vw;
+    height: 1vw;
+    border-radius: 1vw;
+    border-color: transparent;
+    background-color: #434343;
+    color: white;
+    margin: 8% 80%;
+    padding: 0% 1%;
+}
+
+.spawn .geral {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    top: 23%;
+    left: 20%;
+    width: 75%;
+    height: 75%;
+    border-radius: 0.5vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.spawn .quadrados {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 1vw;
+    margin: 0.5vw;
+}
+
+.spawn .quadrados .img {
+    position: relative;
+    bottom: 0.5vw;
+    width: 5vw;
+    height: 5vw;
+}
+
+.spawn .quadrados:hover {
+    transform: scale(1.1 );
+}
+
+.spawn .quadrados .nome {
+    display: flex;
+    position: absolute;
+    bottom: 0.4vw;
+    color: white;
+    width: 8vw;
+    height: 1.5vw;
+    overflow: hidden;
+    font-size: 1vw;
+    font-weight: 500;
+    align-self: center;
+    justify-content: center;
+}
+
+.spawn .quadrados .quantidade {
+    display: flex;
+    position: absolute;
+    top: 0.2vw;
+    right: 4.5vw;
+    color: white;
+    width: 3vw;
+    height: 1.5vw;
+    overflow: hidden;
+    font-size: 1vw;
+    font-weight: 500;
+    align-self: center;
+}
+
+.spawn .quadradin {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    width: 14vw;
+    height: 5vw;
+    border-radius: 1vw;
+    margin: 0.5vw;
+}
+
+.spawn .quadradin .nome {
+    display: flex;
+    position: absolute;
+    top: 0.2vw;
+    color: white;
+    width: 10vw;
+    overflow: hidden;
+    font-size: 1vw;
+    font-weight: 500;
+    align-self: center;
+    justify-content: center;
+}
+
+.spawn .quadradin .tipo {
+    display: flex;
+    position: absolute;
+    color: white;
+    width: 8vw;
+    height: 1.5vw;
+    right: 5vw;
+    top: 2vw;
+    overflow: hidden;
+    background-color: #434343;
+    border-radius: 0.5vw;
+    border-color: transparent;
+}
+
+.spawn .quadradin .confirmar {
+    display: flex;
+    position: absolute;
+    color: white;
+    width: 4vw;
+    height: 1.8vw;
+    right: 0.5vw;
+    top: 2vw;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #007BFF;
+    border-radius: 0.5vw;
+    font: 1vw;
+    font-weight: 900;
+}
+
+.spawn .jogadores {
+    display: flex;
+    position: absolute;
+    background-color: #414141;
+    width: 98%;
+    height: 7%;
+    left: 1%;
+    border-radius: 0.5vw;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8vw;
+}
+
+.infos {
+    display: block;
+    position: absolute;
+    top: 10%;
+    width: 98%;
+    height: 95%;
+    left: 1%;
+    flex-wrap: wrap;
+}
+
+.infos .quadradinhos {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 9%;
+    background-color: #202020;
+    border-radius: 0.5vw;
+    margin-bottom: 1%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.infos2 {
+    display: block;
+    position: absolute;
+    top: 10%;
+    width: 98%;
+    height: 95%;
+    left: 1%;
+    flex-wrap: wrap;
+}
+
+.infos2 .quadradinhos {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: #202020;
+    border-radius: 0.5vw;
+    margin-bottom: 1%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1% 0%;
+}
+
+.infos2 .quadradinhos p {
+    width: 100%;
+    white-space: pre-wrap;
+    word-break: keep-all !important;
+    word-wrap: normal !important;
+}
+
+.id {
+    position: absolute;
+    width: 10%;
+    left: 5%;
+}
+
+.nomeplayer {
+    position: absolute;
+    width: 15%;
+    left: 25%;
+}
+
+.registro {
+    width: 10%;
+    position: absolute;
+}
+
+.celular {
+    width: 10%;
+    position: absolute;
+    right: 25%;
+}
+
+.idade {
+    width: 10%;
+    position: absolute;
+    right: 5%;
+}
+
+.desc {
+    width: 28%;
+    position: absolute;
+    left: 70%;
+}
+
+.options {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    left: 25%;
+    top: 1vw;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 900;
+}
+
+.options .ind {
+    position: relative;
+}
+
+.options .inv {
+    position: relative;
+}
+
+.options .garagem {
+    position: relative;
+}
+
+.options .casas {
+    position: relative;
+}
+
+.ind:hover {
+    transform: scale(1.2);
+}
+
+.inv:hover {
+    transform: scale(1.2);
+}
+
+.garagem:hover {
+    transform: scale(1.2);
+}
+
+.casas:hover {
+    transform: scale(1.2);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.geral .identidade {
+    display: block;
+    position: relative;
+    width: 20vw;
+    height: 100%;
+    border-radius: 0.5vw;
+    overflow: hidden;
+}
+
+.identity-inicial{
+    position: relative;
+    width: 30vw;
+    height: 70vh;
+}
+
+.itens-identity{
+    top: 3vw;
+    position: relative;
+}
+
+.primeiro-identity{
+    color: white;
+    line-height: 1.2vw;
+    text-align: center;
+    font-weight: 400;
+    width: 8vw;
+    margin-bottom: 1.2vw;
+    font-size: 1vw;
+    text-shadow: 0px 2px 5px  rgb(0, 0, 0);
+}
+
+.primeiro{
+    float: left;
+    text-align: left;
+    left: 3vw;
+    position: relative;
+    opacity: 0.7;
+}
+
+.segundo{
+    text-align: right;
+    position: relative;
+    float: left;
+}
+
+.imgidentidade {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    top: 7%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.groups {
+    position: relative;
+    display: flex;
+    width: 20vw;
+    height: 90%;
+    border-radius: 0.5vw;
+    overflow: hidden;
+    margin-left: 2vw;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.grupobarra {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+
+.barrinha {
+    display: flex;
+    position: relative;
+    width: 8vw;
+    height: 3vw;
+    margin: 2% 4%;
+    background-color: #414141;
+    border-radius: 0.3vw;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.barrinha:hover {
+    transform: scale(1.1);
+}
+
+.addgroup {
+    position: absolute;
+    width: 7vw;
+    height: 2.1vw;
+    bottom: 2.7vw;
+    right: 4.2vw;
+    border-radius: 0.5vw;
+    color: white;
+    background-color: #007BFF;
+    border-color: transparent;
+}
+
+.grupo {
+    position: absolute;
+    width: 10vw;
+    height: 2vw;
+    bottom: 2.7vw;
+    right: 11.4vw;
+    border-radius: 0.5vw;
+    color: white;
+    background-color: #414141;
+    border-color: transparent;
+}
