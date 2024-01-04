@@ -1,0 +1,460 @@
+@import url('https://fonts.cdnfonts.com/css/akrobat');
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Akrobat', sans-serif;
+}
+
+body {
+  padding: 25px;
+  overflow: hidden;
+  /* background: #1c1c1c; */
+}
+
+#app {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+  position: absolute;
+}
+
+#app header {
+  width: 434px;
+  height: 94px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  background: linear-gradient(231.07deg, rgba(0, 0, 0, 0) 0%, rgba(77, 62, 136, 0.03) 73.11%), rgba(23, 23, 23, 0.95);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 28px;
+  margin-bottom: 8px;
+
+  position: relative;
+}
+
+#app header .text {
+  position: relative;
+}
+
+#app header .text::before {
+  content: "";
+  width: 25px;
+  height: 3px;
+  background: #4B8ED4;
+  box-shadow: 0px 0px 3px #4B8ED4;
+  border-radius: 5px 5px 0px 0px;
+  transform: rotate(90deg);
+
+  top: 50%;
+  left: -41px;
+  position: absolute;
+}
+
+#app header .text h1 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+
+#app header .text h1 strong {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+#app header .text p {
+  opacity: 0.5;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Akrobat SemiBold', sans-serif;
+}
+
+#app header .savePreset {
+  width: 38px;
+  height: 38px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#app header .savePreset i {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+#app header .savePreset:hover > i {
+  color: rgba(255, 255, 255, 1);
+  transition: 0.2s linear;
+}
+
+#app main {
+  width: 434px;
+  /* height: 555px; */
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  background: linear-gradient(231.07deg, rgba(0, 0, 0, 0) 0%, rgba(77, 62, 136, 0.03) 73.11%), rgba(23, 23, 23, 0.95);
+
+  padding: 12px;
+}
+
+#app main section#config .items {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+
+  height: 352px;
+  max-height: 352px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#app main section#config .items .item {
+  width: 410px;
+  height: 65px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+#app main section#config .items .item .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+}
+
+#app main section#config .items .item .title h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'Akrobat Light', sans-serif;
+}
+
+#app main section#config .items .item .title h6 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Akrobat Light', sans-serif;
+}
+
+#app main section#config .items .item input {
+  width: 100%;
+}
+
+#app main section#config .antilag {
+  width: 410px;
+  height: 38px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 10px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+#app main section#config .antilag p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+#app main section#config .buttons {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#app main section#config .buttons button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1.5px solid rgba(0, 0, 0, 0.01);
+  background: linear-gradient(90deg, rgba(17, 17, 17, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.8);
+
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: .6;
+  transition: 0.2s linear;
+  box-shadow: none;
+}
+
+#app main section#config .buttons button:hover {
+  opacity: 1;
+}
+
+#app main section#config button {
+  width: 410px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 1.5px  rgba(75, 142, 212, 0.45);
+  background: linear-gradient(90deg, rgba(75, 142, 212, 0.8) 0%, rgba(50, 99, 151, 0.8) 100%);
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  gap: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+
+  margin-top: 12px;
+  opacity: 0.8;
+  transition: 0.2s linear;
+}
+
+#app main section#config button:hover {
+  opacity: 1;
+}
+
+#app main section#presets .items {
+  height: 470px;
+  max-height: 470px;
+
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#app main section#presets .items .item {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 410px;
+  height: 65px;
+
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+
+  padding: 0 14px;
+}
+
+#app main section#presets .items .item p strong {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+#app main section#presets .items .item p:first-child {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+#app main section#presets .items .item p:last-child {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+#app main section#presets .buttons {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+#app main section#presets .buttons button {
+  gap: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.6;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  transition: 0.2s linear;
+}
+
+#app main section#presets .buttons button:hover {
+  opacity: 1;
+}
+
+#app main section#presets .buttons button:first-child {
+  width: 113px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1.5px solid rgba(0, 0, 0, 0.01);
+  background: linear-gradient(90deg, rgba(17, 17, 17, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+#app main section#presets .buttons button:last-child {
+  width: 287px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1.5px solid rgba(75, 142, 212, 0.45);
+  background: linear-gradient(90deg, rgba(75, 142, 212, 0.8) 0%, rgba(50, 99, 151, 0.8) 100%);
+}
+
+#app header .presetName {
+  gap: 9px;
+  display: flex;
+  align-items: center;
+
+  right: 28px;
+  position: absolute;
+}
+
+#app header .presetName input {
+  width: 156px;
+  height: 38px;
+  color: white;
+  outline: none;
+  border-radius: 3px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+
+  padding: 0 14px;
+  text-transform: uppercase;
+}
+
+#app header .presetName i { 
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+#app header .presetName i:hover {
+  color: white;
+  transition: 0.2s linear;
+}
+
+#app header .buttons {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#app header .buttons i#list {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+#app header .buttons i#list:hover {
+  color: white;
+  transition: 0.2s linear;
+}
+
+input[type="range"] {
+  height: 8px;
+  appearance: none;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #ff4500;
+  border-radius: 1px;
+  background: #4B8ED4;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+input[type="range"]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+@media (max-width: 4000px) {
+  body {
+    zoom: 2;
+  }
+}
+
+@media (max-width: 3000px) {
+  body {
+    zoom: 1.3;
+  }
+}
+
+@media (max-width: 1920px) {
+  body {
+    zoom: 1;
+  }
+}
+
+@media (max-width: 1600px) {
+  body {
+    zoom: .85;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    zoom: .7;
+  }
+}
+
+@media (max-width: 1100px) and (max-height: 1100px) {
+  body {
+    zoom: .8;
+  }
+}
+
+@media (max-width: 800px) and (max-height: 600px) {
+  body {
+    zoom: .55;
+  }
+}

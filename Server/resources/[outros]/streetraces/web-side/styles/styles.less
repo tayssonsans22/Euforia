@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255, 0.02) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0085FF;
+}
+
+
+body {
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  #streetRaces {
+    width: 976px;
+    height: 576px;
+    background: rgba(29, 29, 29, 0.98);
+    border-radius: 14px;
+
+    gap: 25px;
+    display: flex;
+    padding: 30px;
+
+    section#left {
+      h1 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        width: 274px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .buttonsAppend {
+        gap: 14px;
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 28px;
+
+        button {
+          width: 283px;
+          height: 65px;
+          border: none;
+          border-radius: 8px; 
+          padding: 0 22px ;
+          background: linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0) 100%);
+
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+
+          h4 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+          }
+
+          p {
+            width: max-content;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: rgba(255, 255, 255, 0.7);
+          }
+
+          &:hover {
+            transition: 0.2s linear;
+            background: linear-gradient(90deg, #0085FF 0%, rgba(0, 133, 255, 0) 100%);
+          }
+        }
+      }
+    }
+
+    section#right {
+      width: 608px;
+      height: 513px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.02);
+
+      padding: 14px;
+
+      .thead {
+        width: 100%;
+        height: 51px;
+        border-radius: 8px;
+
+        padding: 0 20px;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 12px;
+
+        p {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          color: #FFFFFF;
+        }
+
+        .searchRaces {
+          width: 221px;
+          height: 33px;
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 6px;
+
+          position: relative;
+
+          display: flex;
+          align-items: center;
+
+
+          input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: transparent;
+
+            padding-left: 12px;
+            padding-right: 30px;
+
+            position: absolute;;
+
+            outline: none;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            color: rgba(255, 255, 255, 0.6);
+          }
+
+          i {
+            right: 12px;
+            color: white;
+            font-size: 12px;
+            position: absolute;
+          }
+        }
+      }
+
+      .tbody {
+        gap: 12px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;;
+
+        max-height: 430px;
+        overflow-y: scroll;
+
+        .race {
+          width: 100%;
+          height: 51px;
+          border-radius: 8px;
+          background: linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0) 100%);
+
+          flex: none;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          padding: 0 20px;
+
+          
+          p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+          }
+
+          .interactions {
+            gap: 8px;
+            display: flex;
+            align-items: center;
+
+            button {
+              width: 106px;
+              height: 28px;
+              border: none;
+              border-radius: 6px;
+              background: #0085FF;
+
+              font-weight: 700;
+              font-size: 10px;
+              line-height: 12px;
+              text-align: center;
+
+              color: #FFFFFF;
+
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #streetModal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    width: 258px;
+    border-radius: 12px;  
+    background: rgba(28, 28, 28, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    padding: 16px;
+
+
+    label {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      color: #FFFFFF;
+      margin-left: 6px;
+    }
+
+    input {
+      width: 221px;
+      height: 48px;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+
+      padding: 0 20px;
+      margin-top: 4px;
+      margin-bottom: 12px;
+
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    button {
+      width: 221px;
+      height: 50px;
+      border: none;
+      border-radius: 8px;
+      background: #0085FF;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+      text-transform: uppercase;;
+
+      &:hover {
+        transition: 0.2s linear;
+        opacity: 0.8;
+      }
+    }
+  }
+}
