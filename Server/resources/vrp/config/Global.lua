@@ -82,7 +82,8 @@ MaintenanceLicenses = { -- licenses que podem entrar na manutenção
 	["0fbf453fca928dc7d91adc16c18a479ff6c530fe"] = true,
 	["cec4432d7acffb61eeaa29ba9550fa448439c780"] = true,
 	["bca10be9064f298546e2eb10a4d93305afb557af"] = true,
-	["b1239acc85b407934963112f1af33cd278e328dd"] = true
+	["b1239acc85b407934963112f1af33cd278e328dd"] = true,
+	["8f55294db2226f4facdd4acadb6b379393b3cfc7"] = true,
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- ARENAITENS
@@ -146,12 +147,12 @@ StartClothes = { -- roupas padrões ao criar um personagem
 		["decals"] = { item = 0, texture = 0 }
 	},
 	["mp_f_freemode_01"] = {
-		["pants"] = { item = 0, texture = 0 },
+		["pants"] = { item = 212, texture = 0 },
 		["arms"] = { item = 0, texture = 0 },
-		["tshirt"] = { item = 1, texture = 0 },
-		["torso"] = { item = 0, texture = 0 },
+		["tshirt"] = { item = 15, texture = 0 },
+		["torso"] = { item = 609, texture = 13 },
 		["vest"] = { item = 0, texture = 0 },
-		["shoes"] = { item = 0, texture = 0 },
+		["shoes"] = { item = 145, texture = 0 },
 		["mask"] = { item = 0, texture = 0 },
 		["backpack"] = { item = 0, texture = 0 },
 		["hat"] = { item = -1, texture = 0 },

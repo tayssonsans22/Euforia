@@ -18,7 +18,6 @@ client_scripts {
 	"config/Native.lua",
 	"config/Rewards.lua",
 	"config/Vehicle.lua",
-	"config/Webhooks.lua",
 
 	"client/Local.lua",
 	"client/Active.lua",

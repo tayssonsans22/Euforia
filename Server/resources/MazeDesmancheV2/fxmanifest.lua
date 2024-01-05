@@ -12,6 +12,7 @@ client_scripts {
 server_scripts {
 	"@vrp/lib/utils.lua",
     "@vrp/config/Item.lua",
+	"@vrp/config/Groups.lua",
 	"@vrp/config/Vehicle.lua",
     "server.lua"
 }

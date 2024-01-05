@@ -999,7 +999,7 @@ function Hensa.Use(Slot,Amount)
 			end
 		end
 
-		if itemType(Full) == "Armamento" and parseInt(Slot) <= 5 and not Player(source)["state"]["Safezone"] then
+		if itemType(Full) == "Armamento" and parseInt(Slot) <= 8 and not Player(source)["state"]["Safezone"] then
 			if vRPC.InsideVehicle(source) and not itemVehicle(Full) then
 				return
 			end

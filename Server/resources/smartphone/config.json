@@ -14,12 +14,11 @@
     },
     "call_mode": "mumble-voip",
     "webhookURL": "https://discord.com/api/webhooks/1172969738540953620/3hOOLO54Xg82_yLZShtF_VxKeRyNdl8a3T0oTmBHOTrSavoQg0-7jcvofYrdqOen7XKL",
-    "instagram_verify": "mindmaster.permissao",
+    "instagram_verify": "Administrador",
     "instagram_accounts": {
-        "*": 1,
-        "manager.permissao": 2
+        "*": 2
     },
-    "moderator": "mindmaster.permissao",
+    "moderator": "Admin",
     "item": "cellphone",
     "services": [
         {
@@ -38,9 +37,9 @@
             "permission": "Mecanico"
         },
         {
-            "name": "Taxi",
+            "name": "Administrador",
             "number": "0800 075",
-            "permission": "taxi.permissao"
+            "permission": "Admin"
         }
     ],
     "base": "creative_network"
