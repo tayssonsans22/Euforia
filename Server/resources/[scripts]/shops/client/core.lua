@@ -114,7 +114,7 @@ local List = {
 	{ -3173.51, 1088.35,  20.84,  "Ammunation",  false, 2.0,  true,  "Loja de Armas" },
 	{ 22.53,    -1105.52, 29.79,  "Ammunation",  false, 2.0,  true,  "Loja de Armas" },
 	{ 810.22,   -2158.99, 29.62,  "Ammunation",  false, 2.0,  true,  "Loja de Armas" },
-	{ -1816.64, -1193.73, 14.31,  "Fishing",     false, 2.0,  false, "Loja de Pesca" },
+	{ -1377.96, 4293.46,  4.11,  "Fishing",     false, 2.0,  false, "Loja de Pesca" },
 	-- { -679.13,  5839.52,  17.3,   "Hunting",     false, 2.0,  false, "Loja de Caça" },
 	{ 2001.07,5112.39,43.4,  "Fruits",      false, 2.0,  false, "Loja de Frutas" },
 	{ 2436.05,4773.97,34.65,  "Milkman",      false, 2.0,  false, "Loja de Utilitarios" },
@@ -198,16 +198,16 @@ AddEventHandler("shops:Open", function(Number)
 	if MumbleIsConnected() then
 		if vSERVER.Permission(List[Number][4]) then
 			if List[Number][7] then
-				if GetClockHours() >= 08 and GetClockHours() <= 23 then
+				-- if GetClockHours() >= 08 and GetClockHours() <= 23 then
 					SetNuiFocus(true, true)
 					SendNUIMessage({ Action = "Open", name = List[Number][4], type = vSERVER.ShopType(List[Number][4]) })
 
 					if List[Number][5] then
 						TriggerEvent("sounds:Private", "shop", 0.5)
 					end
-				else
-					TriggerEvent("Notify", "azul", "Estamos fechados por agora, nosso horário de funcionamento é das <b>08</b> ás <b>23 Horas</b>.", List[Number][8], 5000)
-				end
+				-- else
+				-- 	TriggerEvent("Notify", "azul", "Estamos fechados por agora, nosso horário de funcionamento é das <b>08</b> ás <b>23 Horas</b>.", List[Number][8], 5000)
+				-- end
 			else
 				SetNuiFocus(true, true)
 				SendNUIMessage({ Action = "Open", name = List[Number][4], type = vSERVER.ShopType(List[Number][4]) })
@@ -501,12 +501,12 @@ AddEventHandler("shops:Mechanics", function(Number)
 			SendNUIMessage({ Action = "Open", name = "Mecanico2", type = "Buy" })
 		else
 			if vSERVER.Connecteds("Mecanico") then
-				if GetClockHours() >= 08 and GetClockHours() <= 23 then
+				-- if GetClockHours() >= 08 and GetClockHours() <= 23 then
 					SetNuiFocus(true, true)
 					SendNUIMessage({ Action = "Open", name = "Mecanico", type = "Buy" })
-				else
-					TriggerEvent("Notify", "azul", "Estamos fechados por agora, nosso horário de funcionamento é das <b>08</b> ás <b>23 Horas</b>.", "Loja da Mecânica", 5000)
-				end
+				-- else
+				-- 	TriggerEvent("Notify", "azul", "Estamos fechados por agora, nosso horário de funcionamento é das <b>08</b> ás <b>23 Horas</b>.", "Loja da Mecânica", 5000)
+				-- end
 			end
 		end
 	end

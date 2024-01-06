@@ -575,8 +575,8 @@ function Hensa.Spawn(Name, Number)
 											end
 										end
 									else
-										if vRP.Request(source, "Garagem", "Retirar o veículo por <b>$" .. parseFormat(VehiclePrice * 0.05) .. "</b> reais?") then
-											if vRP.PaymentFull(Passport, parseInt(VehiclePrice * 0.05)) then
+										if vRP.Request(source, "Garagem", "Retirar o veículo por <b>$" .. parseFormat(VehiclePrice * 0.01) .. "</b> reais?") then
+											if vRP.PaymentFull(Passport, parseInt(VehiclePrice * 0.01)) then
 												TriggerClientEvent("dynamic:closeSystem", source)
 												local Exist, Network = Hensa.ServerVehicle(Name, Coords[1], Coords[2], Coords[3], Coords[4], Plate, vehicle[1]["nitro"], vehicle[1] ["doors"], vehicle[1]["body"])
 

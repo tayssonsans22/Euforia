@@ -76,7 +76,7 @@ CooldownHungerThrist = 60000 -- tempo de desgaste
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- MAINTENANCE
 -----------------------------------------------------------------------------------------------------------------------------------------
-Maintenance = true     -- true para ativar a manutenção
+Maintenance = false     -- true para ativar a manutenção
 MaintenanceText = "Servidor em manutenção! Tente novamente mais tarde."
 MaintenanceLicenses = { -- licenses que podem entrar na manutenção
 	["0fbf453fca928dc7d91adc16c18a479ff6c530fe"] = true,

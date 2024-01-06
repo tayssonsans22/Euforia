@@ -870,7 +870,7 @@ CreateThread(function()
 					return
 				end
 
-				local message = string.format("Base Hensa\n\n"..Lang.Position.."%s\nEvite punições, fique por dentro das regras de conduta.\nAtualizações frequentes, deixe sua sugestão em nosso discord.", pos, #Queue.List, dots)
+				local message = string.format("Euforia RolePlay\n\n"..Lang.Position.."%s\nEvite punições, fique por dentro das regras de conduta.\nAtualizações frequentes, deixe sua sugestão em nosso discord.", pos, #Queue.List, dots)
 				data.deferrals.update(message)
 			end
 		end)

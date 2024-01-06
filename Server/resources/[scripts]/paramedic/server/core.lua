@@ -112,7 +112,7 @@ AddEventHandler("paramedic:Treatment",function(Entitys)
 		local OtherPassport = vRP.Passport(Entitys)
 		local Identity = vRP.Identity(OtherPassport)
 		if Identity then
-			if vRP.TakeItem(Passport,"syringe0"..Identity["Blood"],1) then
+			-- if vRP.TakeItem(Passport,"syringe0"..Identity["Blood"],1) then
 				if not Blood[OtherPassport] then
 					Blood[OtherPassport] = os.time() + 1800
 				end
@@ -120,9 +120,9 @@ AddEventHandler("paramedic:Treatment",function(Entitys)
 				TriggerEvent("Reposed",Entitys,OtherPassport,600)
 				TriggerClientEvent("target:StartTreatment",Entitys)
 				TriggerClientEvent("Notify",source,"verde","Tratamento começou.","Sucesso",5000)
-			else
-				TriggerClientEvent("Notify",source,"amarelo","Precisa de <b>1x "..itemName("syringe0"..Identity["Blood"]).."</b>.","Atenção",5000)
-			end
+			-- else
+			-- 	TriggerClientEvent("Notify",source,"amarelo","Precisa de <b>1x "..itemName("syringe0"..Identity["Blood"]).."</b>.","Atenção",5000)
+			-- end
 		end
 	end
 end)

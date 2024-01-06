@@ -35,7 +35,7 @@ end
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterNetEvent("pdm:Open")
 AddEventHandler("pdm:Open", function()
-	if GetClockHours() >= 08 and GetClockHours() <= 23 then
+	-- if GetClockHours() >= 08 and GetClockHours() <= 23 then
 		if DoesEntityExist(Mount) then
 			DeleteEntity(Mount)
 		end
@@ -49,10 +49,10 @@ AddEventHandler("pdm:Open", function()
 			TriggerEvent("dynamic:closeSystem")
 			SendNUIMessage({ name = "Open", payload = VehicleGlobal() })
 		end
-	else
-		TriggerEvent("Notify", "default", "Horário de funcionamento é das <b>08</b> ás <b>23</b> Horas.", "Inoperável",
-			5000)
-	end
+	-- else
+	-- 	TriggerEvent("Notify", "default", "Horário de funcionamento é das <b>08</b> ás <b>23</b> Horas.", "Inoperável",
+	-- 		5000)
+	-- end
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- CLOSE

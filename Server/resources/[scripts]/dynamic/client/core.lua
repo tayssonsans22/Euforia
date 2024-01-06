@@ -316,7 +316,7 @@ RegisterNetEvent("dynamic:Work")
 AddEventHandler("dynamic:Work", function()
 	if not IsPauseMenuActive() then
 		if not LocalPlayer["state"]["Commands"] and not LocalPlayer["state"]["Handcuff"] and not Dynamic and MumbleIsConnected() then
-			if GetClockHours() >= 06 and GetClockHours() <= 22 then
+			-- if GetClockHours() >= 06 and GetClockHours() <= 22 then
 				if LocalPlayer["state"]["Work"] == true then
 					exports["dynamic"]:AddButton("Finalizar", "Saia do seu serviço atual.", "dynamic:WorkStatus", "Sair", false, true)
 				else
@@ -336,9 +336,9 @@ AddEventHandler("dynamic:Work", function()
 				end
 
 				exports["dynamic"]:openMenu()
-			else
-				TriggerEvent("Notify", "azul", "Estamos fechados por agora, nosso horário de funcionamento é das <b>06</b> ás <b>22 Horas</b>.", "Central de Empregos", 5000)
-			end
+			-- else
+			-- 	TriggerEvent("Notify", "azul", "Estamos fechados por agora, nosso horário de funcionamento é das <b>06</b> ás <b>22 Horas</b>.", "Central de Empregos", 5000)
+			-- end
 		end
 	end
 end)

@@ -93,7 +93,7 @@ function Hensa.NewCharacter(name, lastname, sex)
 		local Last = vRP.Query("characters/LastCharacter",{ License = License })
 		if Last[1] then
 			TriggerEvent("vRP:BucketServer", source, "Exit")
-			vRP.Query("vehicles/addVehicles",{ Passport = Last[1][0], vehicle = "filthynsx", plate = vRP.GeneratePlate(), work = "false" })
+			vRP.Query("vehicles/addVehicles",{ Passport = Last[1]["id"], vehicle = "filthynsx", plate = vRP.GeneratePlate(), work = "false" })
 			local Accounts = vRP.Query("accounts/Account",{ License = License })
 			local link = "https://discord.com/api/webhooks/1170559248879583332/NKpgtMQnKpyBjP0lK1RQy6aHrhTGRsKjOFDjID7ESK_h7MK_5kYVUntuvFzQ8OfGUNUl"
 			local mensagem = Accounts[1]["Discord"].." "..Last[1]["id"].." "..name.." "..lastname

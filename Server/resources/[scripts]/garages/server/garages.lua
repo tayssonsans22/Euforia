@@ -47,6 +47,8 @@ Garages = {
 
 	["174"] = { name = "Garage", payment = true, license = true },
 
+	["175"] = { name = "Garage", payment = true, license = true },
+
 	["159"] = { name = "Fac", payment = false, license = false, perm = "Favela01" },
 	["160"] = { name = "Fac", payment = false, license = false, perm = "Favela02"  },
 	["161"] = { name = "Fac", payment = false, license = false, perm = "Favela03"  },
