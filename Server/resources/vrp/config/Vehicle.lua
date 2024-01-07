@@ -1870,11 +1870,19 @@ local List = {
 	},
 	["baller4"] = {
 		["Name"] = "Baller 4",
-		["Weight"] = 55,
-		["Price"] = 430000,
-		["Mode"] = "Cars",
+		["Weight"] = 85,
+		["Price"] = 5000,
+		["Mode"] = nil,
 		["Gemstone"] = 0,
 		["Class"] = "SUVs"
+	},
+	["sanchez2"] = {
+		["Name"] = "Sanchez Bike",
+		["Weight"] = 35,
+		["Price"] = 1000,
+		["Mode"] = nil,
+		["Gemstone"] = 0,
+		["Class"] = "Motocicletas"
 	},
 	["baller5"] = {
 		["Name"] = "Baller 5",
