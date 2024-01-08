@@ -152,7 +152,10 @@ local List = {
 			["advtoolbox"] = 765,
 			["WEAPON_CROWBAR"] = 365,
 			["WEAPON_WRENCH"] = 365,
-			["carjack"] = 187
+			["carjack"] = 187,
+			["graphite01"] = 7,
+			["graphite02"] = 7,
+			["graphite03"] = 7
 		}
 	},
 	["Mecanico2"] = {
