@@ -46,6 +46,17 @@ GlobalState["Doors"] = {
 	["21"] = { Coords = vec3(1844.99, 2604.81, 44.63), Hash = 741314661, Disabled = false, Lock = true, Distance = 7, Perm = "Emergencia" },
 	["22"] = { Coords = vec3(1818.54, 2604.40, 44.61), Hash = 741314661, Disabled = false, Lock = true, Distance = 7, Perm = "Emergencia" },
 
+	["23"] = { Coords = vec3(-1468.33,68.84,53.3), Hash = -2125423493, Disabled = false, Lock = true, Distance = 7, Perm = "Mafia03" }, -- PlayBoy
+	["24"] = { Coords = vec3(-1611.27,76.77,61.57), Hash = -2125423493, Disabled = false, Lock = true, Distance = 7, Perm = "Mafia03" }, -- PlayBoy
+	-- ["25"] = { Coords = vec3(-1461.3,65.93,52.93), Hash = -1859471240, Disabled = false, Lock = true, Distance = 7, Perm = "Mafia03" },
+	-- ["26"] = { Coords = vec3(-1441.22,172.94,55.84), Hash = -1859471240, Disabled = false, Lock = true, Distance = 3, Perm = "Mafia03" },
+	-- ["27"] = { Coords = vec3(-1434.72,235.89,59.97), Hash = -1859471240, Disabled = false, Lock = true, Distance = 3, Perm = "Mafia03" },
+	-- ["28"] = { Coords = vec3(-1579.41,152.72,58.69), Hash = -1859471240, Disabled = false, Lock = true, Distance = 3, Perm = "Mafia03" },
+
+	["29"] = { Coords = vec3(-1871.23,2040.55,139.52), Hash = 741314661, Disabled = false, Lock = true, Distance = 7, Perm = "Mafia01" }, -- Vinhedo
+
+	["30"] = { Coords = vec3(109.48,-1329.77,29.44), Hash = 741314661, Disabled = false, Lock = true, Distance = 7, Perm = "Mafia06" }, -- Vanilla
+
 	-- ["23"] = { Coords = vec3(1837.91, 2590.25, 46.19), Hash = 539686410, Disabled = false, Lock = true, Distance = 1.5, Perm = "Policia" },
 	-- ["24"] = { Coords = vec3(1768.54, 2498.41, 45.88), Hash = 913760512, Disabled = false, Lock = true, Distance = 1.5, Perm = "Policia" },
 	-- ["25"] = { Coords = vec3(1765.40, 2496.59, 45.88), Hash = 913760512, Disabled = false, Lock = true, Distance = 1.5, Perm = "Policia" },

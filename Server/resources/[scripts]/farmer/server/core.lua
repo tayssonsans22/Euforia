@@ -87,7 +87,7 @@ AddEventHandler("farmer:Minerman",function(Number)
 
 								vRP.GenerateItem(Passport,Itens[Number],Valuation,true)
 								vRP.PutExperience(Passport,"Minerman",1)
-								vRP.UpgradeStress(Passport,5)
+								-- vRP.UpgradeStress(Passport,5)
 
 								local Rand = math.random(#Minerman)
 								GlobalState["FarmerObjects:"..Number] = Minerman[Rand]["Model"]
@@ -168,7 +168,7 @@ AddEventHandler("farmer:Fruitman",function(Number)
 							end
 
 							vRP.GenerateItem(Passport,Items[Select],Valuation,true)
-							vRP.UpgradeStress(Passport,math.random(2,4))
+							-- vRP.UpgradeStress(Passport,math.random(2,4))
 						end
 
 						Player(source)["state"]["Buttons"] = false
@@ -242,7 +242,7 @@ AddEventHandler("farmer:Lumberman",function(Number)
 							end
 
 							vRP.GenerateItem(Passport,"woodlog",Valuation,true)
-							vRP.UpgradeStress(Passport,math.random(2,4))
+							-- vRP.UpgradeStress(Passport,math.random(2,4))
 						end
 
 						Player(source)["state"]["Buttons"] = false
@@ -303,7 +303,7 @@ AddEventHandler("farmer:Transporter",function(Number)
 						end
 
 						vRP.GenerateItem(Passport,"pouch",Valuation,true)
-						vRP.UpgradeStress(Passport,math.random(2))
+						-- vRP.UpgradeStress(Passport,math.random(2))
 					end
 
 					Player(source)["state"]["Buttons"] = false
@@ -361,7 +361,7 @@ AddEventHandler("farmer:Diver",function(Number)
 						end
 
 						vRP.GenerateItem(Passport,"woodenbarrel",Valuation,true)
-						vRP.UpgradeStress(Passport,math.random(2,4))
+						-- vRP.UpgradeStress(Passport,math.random(2,4))
 					end
 
 					Player(source)["state"]["Buttons"] = false
@@ -420,7 +420,7 @@ AddEventHandler("farmer:Farmer",function(Number)
 							end
 
 							vRP.GenerateItem(Passport,"corn",Valuation,true)
-							vRP.UpgradeStress(Passport,math.random(2,4))
+							-- vRP.UpgradeStress(Passport,math.random(2,4))
 						end
 
 						Player(source)["state"]["Buttons"] = false

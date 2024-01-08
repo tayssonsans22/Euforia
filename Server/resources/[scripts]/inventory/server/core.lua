@@ -1486,8 +1486,10 @@ function Hensa.VerifyObjects(Entity,Service)
 							end
 
 							if vRP.GetWork(Passport) == "Garbageman" then
-								local randItem = math.random(140)
-								if parseInt(randItem) >= 101 and parseInt(randItem) <= 120 then
+								local randItem = math.random(160)
+								if parseInt(randItem) >= 121 and parseInt(randItem) <= 160 then
+									itemSelect = { "recyclable", Valuation }
+								elseif parseInt(randItem) >= 101 and parseInt(randItem) <= 120 then
 									itemSelect = { "titanium", Valuation }
 								elseif parseInt(randItem) >= 81 and parseInt(randItem) <= 100 then
 									itemSelect = { "metalcan", Valuation }

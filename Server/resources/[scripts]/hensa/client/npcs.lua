@@ -618,7 +618,7 @@ local NPCs = {
 		anim = { "anim@heists@heist_corona@single_team", "single_team_loop_boss" }
 	}, { -- Lixeiro
 		Distance = 50,
-		Coords = { -322.25, -1545.94, 31.02, 274.97 },
+		Coords = { -432.09,-1719.12,18.99,249.45 },
 		Model = "s_m_y_garbage",
 		anim = { "anim@heists@heist_corona@single_team", "single_team_loop_boss" }
 	}, { -- Lixeiro

@@ -53,7 +53,8 @@ function Hensa.Drops(Item,Slot,Amount)
 	local source = source
 	local Passport = vRP.Passport(source)
 	local Route = GetPlayerRoutingBucket(source)
-	if Passport and not Active[Passport] and not itemBlock(Item) and not BlockDrops(Item) and not Player(source)["state"]["Handcuff"] and not exports["hud"]:Wanted(Passport) and not vRPC.InsideVehicle(source) then
+	print(Item,Slot,Amount)
+	if Passport and not Active[Passport] and not itemBlock(Item) and not Player(source)["state"]["Handcuff"] and not exports["hud"]:Wanted(Passport) and not vRPC.InsideVehicle(source) then
 		Active[Passport] = true
 
 		-- if vRP.CheckDamaged(Item) then
@@ -64,7 +65,7 @@ function Hensa.Drops(Item,Slot,Amount)
 		-- 	return false
 		-- end
 
-		if vRP.TakeItem(Passport,Item,Amount,false,Slot) then
+		if vRP.TakeItem(Passport,Item,Amount,false) then
 			if not Drops[Route] then
 				Drops[Route] = {}
 			end

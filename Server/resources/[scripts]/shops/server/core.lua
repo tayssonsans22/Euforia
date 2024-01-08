@@ -124,7 +124,7 @@ local List = {
 		}
 	},
 	["BurgerShot"] = {
-		["Mode"] = "Sell",
+		["Mode"] = "Buy",
 		["Type"] = "Cash",
 		["List"] = {
 			["guarananatural"] = 50,
@@ -532,10 +532,10 @@ function Hensa.Permission(Type)
 	local source = source
 	local Passport = vRP.Passport(source)
 	if Passport then
-		if vRP.GetTax(source) > NewBankMinTaxs then
-			TriggerClientEvent("Notify",source,"amarelo","Você possúi muitos <b>Impostos Atrasados</b>.","Atenção",5000)
-			return false
-		end
+		-- if vRP.GetTax(source) > NewBankMinTaxs then
+		-- 	TriggerClientEvent("Notify",source,"amarelo","Você possúi muitos <b>Impostos Atrasados</b>.","Atenção",5000)
+		-- 	return false
+		-- end
 
 		if List[Type] and List[Type]["Permission"] and not vRP.HasService(Passport,List[Type]["Permission"]) then
 			return false

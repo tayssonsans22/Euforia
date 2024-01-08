@@ -31,10 +31,10 @@ function Hensa.Verify(Number)
 	local source = source
 	local Passport = vRP.Passport(source)
 	if Passport then
-		if vRP.GetTax(source) > NewBankMinTaxs then
-			TriggerClientEvent("Notify",source,"amarelo","Você possúi muitos <b>Impostos Atrasados</b>.","Atenção",5000)
-			return false
-		end
+		-- if vRP.GetTax(source) > NewBankMinTaxs then
+		-- 	TriggerClientEvent("Notify",source,"amarelo","Você possúi muitos <b>Impostos Atrasados</b>.","Atenção",5000)
+		-- 	return false
+		-- end
 
 		-- if Garages[Number]["license"] then
 		-- 	if vRP.GetDriverLicense(Passport) == 0 then

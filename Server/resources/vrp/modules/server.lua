@@ -2896,21 +2896,8 @@ end
 CreateThread(function()
 	while true do
 		for k,v in pairs(Sources) do
-			if TemperatureEffect then
-				if GlobalState["Temperature"] >= TemperatureHot then
-					vRP.DowngradeHunger(k, ConsumeHunger)
-					vRP.DowngradeThirst(k, ConsumeThirst * 2)
-				elseif GlobalState["Temperature"] <= TemperatureCold then
-					vRP.DowngradeHunger(k, ConsumeHunger * 2)
-					vRP.DowngradeThirst(k, ConsumeThirst)
-				else
-					vRP.DowngradeHunger(k, ConsumeHunger)
-					vRP.DowngradeThirst(k, ConsumeThirst)
-				end
-			else
-				vRP.DowngradeHunger(k, ConsumeHunger)
-				vRP.DowngradeThirst(k, ConsumeThirst)
-			end
+			vRP.DowngradeHunger(k, ConsumeHunger)
+			vRP.DowngradeThirst(k, ConsumeThirst)
 		end
 
 		Wait(CooldownHungerThrist)

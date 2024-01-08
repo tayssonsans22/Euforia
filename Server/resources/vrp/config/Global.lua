@@ -70,8 +70,8 @@ NewBankMinTaxs = 1 -- true se quiser ativar os impostos na base com o nosso bank
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- HUNGER / THIRST
 -----------------------------------------------------------------------------------------------------------------------------------------
-ConsumeHunger = 0.5            -- quantos % vai consumir da fome
-ConsumeThirst = 0.5            -- quantos % vai consumir da sede
+ConsumeHunger = 1.0            -- quantos % vai consumir da fome
+ConsumeThirst = 1.0            -- quantos % vai consumir da sede
 CooldownHungerThrist = 60000 -- tempo de desgaste
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- MAINTENANCE

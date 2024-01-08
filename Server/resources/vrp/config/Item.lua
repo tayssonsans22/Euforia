@@ -1259,6 +1259,7 @@ local List = {
 		["Index"] = "vpn",
 		["Name"] = "Circuito VPN",
 		["Type"] = "Usável",
+		["Arrest"] = true,
 		["Weight"] = 0.25,
 		["Durability"] = 168,
 		["Economy"] = 4225

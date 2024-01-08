@@ -3898,12 +3898,7 @@ Use = {
 
 				if vRP.TakeItem(Passport,Full,1,true,Slot) then
 					vRP.GenerateItem(Passport, "emptybottle", 1)
-
-					if GlobalState["Temperature"] >= TemperatureHot then
-						vRP.UpgradeThirst(Passport, 40)
-					else
-						vRP.UpgradeThirst(Passport, 20)
-					end
+					vRP.UpgradeThirst(Passport, 40)
 				end
 			end
 
@@ -5161,7 +5156,7 @@ Use = {
 				Player(source)["state"]["Buttons"] = false
 
 				if vRP.TakeItem(Passport,Full,1,true,Slot) then
-					vRP.UpgradeHunger(Passport, 10)
+					vRP.UpgradeHunger(Passport, 40)
 				end
 			end
 
@@ -5184,7 +5179,7 @@ Use = {
 				Player(source)["state"]["Buttons"] = false
 
 				if vRP.TakeItem(Passport,Full,1,true,Slot) then
-					vRP.UpgradeHunger(Passport, 10)
+					vRP.UpgradeHunger(Passport, 40)
 				end
 			end
 
@@ -5207,7 +5202,7 @@ Use = {
 				Player(source)["state"]["Buttons"] = false
 
 				if vRP.TakeItem(Passport,Full,1,true,Slot) then
-					vRP.UpgradeHunger(Passport, 15)
+					vRP.UpgradeHunger(Passport, 30)
 				end
 			end
 
@@ -5230,7 +5225,7 @@ Use = {
 				Player(source)["state"]["Buttons"] = false
 
 				if vRP.TakeItem(Passport,Full,1,true,Slot) then
-					vRP.UpgradeHunger(Passport, 5)
+					vRP.UpgradeHunger(Passport, 20)
 				end
 			end
 
@@ -5280,7 +5275,7 @@ Use = {
 				Player(source)["state"]["Buttons"] = false
 
 				if vRP.TakeItem(Passport,Full,1,true,Slot) then
-					vRP.UpgradeThirst(Passport, 25)
+					vRP.UpgradeThirst(Passport, 40)
 				end
 			end
 
@@ -5303,7 +5298,7 @@ Use = {
 				Player(source)["state"]["Buttons"] = false
 
 				if vRP.TakeItem(Passport,Full,1,true,Slot) then
-					vRP.UpgradeThirst(Passport, 25)
+					vRP.UpgradeThirst(Passport, 30)
 
 					if vCLIENT.Restaurant(source) then
 						TriggerEvent("inventory:BuffServer", source, Passport, "Dexterity", 900)

@@ -537,7 +537,7 @@ List = {
 			["WEAPON_RIFLE_AMMO"] = {
 				["Amount"] = 1,
 				["Craftable"] = true,
-				["Time"] = 15,
+				["Time"] = 5,
 				["Required"] = {
 					["aluminum"] = 1
 				}
@@ -564,7 +564,7 @@ List = {
 			["WEAPON_PISTOL_AMMO"] = {
 				["Amount"] = 1,
 				["Craftable"] = true,
-				["Time"] = 15,
+				["Time"] = 5,
 				["Required"] = {
 					["copper"] = 1
 				}
@@ -621,7 +621,7 @@ List = {
 			["WEAPON_SMG_AMMO"] = {
 				["Amount"] = 1,
 				["Craftable"] = true,
-				["Time"] = 15,
+				["Time"] = 5,
 				["Required"] = {
 					["aluminum"] = 1
 				}
@@ -695,7 +695,7 @@ List = {
 			["WEAPON_PISTOL_AMMO"] = {
 				["Amount"] = 1,
 				["Craftable"] = true,
-				["Time"] = 15,
+				["Time"] = 5,
 				["Required"] = {
 					["copper"] = 1
 				}
@@ -721,7 +721,7 @@ List = {
 			["WEAPON_PISTOL_AMMO"] = {
 				["Amount"] = 1,
 				["Craftable"] = true,
-				["Time"] = 15,
+				["Time"] = 5,
 				["Required"] = {
 					["copper"] = 1
 				}
@@ -809,7 +809,7 @@ List = {
 			["WEAPON_PISTOL_AMMO"] = {
 				["Amount"] = 1,
 				["Craftable"] = true,
-				["Time"] = 15,
+				["Time"] = 5,
 				["Required"] = {
 					["copper"] = 1
 				}

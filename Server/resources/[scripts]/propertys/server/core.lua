@@ -93,10 +93,10 @@ function Hensa.Propertys(Name)
 	local source = source
 	local Passport = vRP.Passport(source)
 	if Passport then
-		if vRP.GetTax(source) > NewBankMinTaxs then
-			TriggerClientEvent("Notify",source,"amarelo","Você possúi muitos <b>Impostos Atrasados</b>.","Atenção",5000)
-			return false
-		end
+		-- if vRP.GetTax(source) > NewBankMinTaxs then
+		-- 	TriggerClientEvent("Notify",source,"amarelo","Você possúi muitos <b>Impostos Atrasados</b>.","Atenção",5000)
+		-- 	return false
+		-- end
 
 		local Consult = vRP.Query("propertys/Exist",{ Name = Name })
 		if Consult[1] then
