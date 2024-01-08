@@ -279,7 +279,7 @@ CreateThread(function()
 		SetRandomVehicleDensityMultiplierThisFrame(0.08)
 		SetParkedVehicleDensityMultiplierThisFrame(0.08)
 		SetScenarioPedDensityMultiplierThisFrame(0.08, 0.08)
-		SetPedDensityMultiplierThisFrame(0.08)
+		SetPedDensityMultiplierThisFrame(0.25)
 
 		local Pid = PlayerId()
 		local Ped = PlayerPedId()

@@ -1288,7 +1288,7 @@ List = {
 				["Time"] = 15,
 				["Required"] = {
 					["aluminum"] = 5,
-					["recyclable"] = 30
+					--["recyclable"] = 30
 				}
 			},
 			["aluminum"] = {
@@ -1297,7 +1297,7 @@ List = {
 				["Time"] = 15,
 				["Required"] = {
 					["metalcan"] = 1,
-					["recyclable"] = 15
+					--["recyclable"] = 15
 				}
 			},
 			["rubber"] = {
@@ -1306,7 +1306,7 @@ List = {
 				["Time"] = 15,
 				["Required"] = {
 					["elastic"] = 1,
-					["recyclable"] = 15
+					--["recyclable"] = 15
 				}
 			},
 			["sheetmetal"] = {
@@ -1323,7 +1323,7 @@ List = {
 				["Time"] = 15,
 				["Required"] = {
 					["battery"] = 1,
-					["recyclable"] = 15
+					--["recyclable"] = 15
 				}
 			},
 			["techtrash"] = {
@@ -1356,7 +1356,7 @@ List = {
 				["Time"] = 15,
 				["Required"] = {
 					["plasticbottle"] = 1,
-					["recyclable"] = 15
+					--["recyclable"] = 15
 				}
 			},
 			["glass"] = {
@@ -1365,7 +1365,7 @@ List = {
 				["Time"] = 15,
 				["Required"] = {
 					["glassbottle"] = 1,
-					["recyclable"] = 15
+					--["recyclable"] = 15
 				}
 			}
 		}
