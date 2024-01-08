@@ -718,7 +718,7 @@ end)
 -- SHUTDOWN
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand("shutdown",function(source)
-	TriggerClientEvent("Notify",-1,"vermelho","Os geólogos informaram para nossa unidade governamental que foi encontrado um abalo de magnitude <b>60</b> na <b>Escala Richter</b>, encontrem abrigo até que o mesmo passe.","Terromoto",60000)
+	TriggerClientEvent("Notify",-1,"vermelho","Os geólogos informaram para nossa unidade governamental que foi encontrado um abalo de magnitude <b>60</b> na <b>Escala Richter</b>, encontrem abrigo até que o mesmo passe.","Terromoto",600000)
 	GlobalState["Quake"] = true
 
 	if source ~= 0 then
