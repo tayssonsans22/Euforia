@@ -5,12 +5,12 @@
         "uploadServer": "https://discord.com/api/webhooks/1172969826063503390/1N0BQq7_lWEu-VrViFef8kN3TntHHvtgk6c2GxIqmu1lHCFvZlGZa7fDbViGSLPRjraY",
         "allowUnsafeURL": true,
         "videoServer": "45.151.214.248:8080",
-        "case": "iphonexs",
+        "case": "iphone14pro",
         "isAndroid": false,
         "useGameClock": false,
         "phone_template": "XXX-XXX",
         "backgroundURL": "",
-        "disabledApps": []
+        "disabledApps": ["yellowpages","truco","minesweeper"]
     },
     "call_mode": "pma-voice",
     "webhookURL": "https://discord.com/api/webhooks/1172969738540953620/3hOOLO54Xg82_yLZShtF_VxKeRyNdl8a3T0oTmBHOTrSavoQg0-7jcvofYrdqOen7XKL",

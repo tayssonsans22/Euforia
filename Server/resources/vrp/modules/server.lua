@@ -2421,16 +2421,16 @@ function vRP.PaymentFull(Passport,Amount)
 
 			return true
 		elseif Characters[Source] and Amount <= Characters[Source]["Bank"] then
-			if vRP.ConsultItem(Passport,"bankcard",1) then
+			if vRP.ConsultItem(Passport,"cellphone",1) then
 				if not GlobalState["Blackout"] then
 					vRP.RemoveBank(Passport,Amount)
 					TriggerClientEvent("NotifyItens",Source,{ "-", DefaultDollars1, Amount, itemName(DefaultDollars1) })
 					return true
 				else
-					TriggerClientEvent("Notify",Source,"vermelho","No momento não estamos aceitando <b>"..itemName("bankcard").."</b> pois estamos sem eletricidade.","Aviso",5000)
+					TriggerClientEvent("Notify",Source,"vermelho","No momento não estamos aceitando <b>"..itemName("cellphone").."</b> pois estamos sem eletricidade.","Aviso",5000)
 				end
 			else
-				TriggerClientEvent("Notify",Source,"vermelho","Você precisa de <b>1x "..itemName("bankcard").."</b>.","Aviso",5000)
+				TriggerClientEvent("Notify",Source,"vermelho","Você precisa de <b>1x "..itemName("cellphone").."</b>.","Aviso",5000)
 			end
 		else
 			TriggerClientEvent("Notify",Source,"vermelho","<b>Saldo</b> insuficiente.","Aviso",5000)

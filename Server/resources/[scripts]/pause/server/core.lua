@@ -90,7 +90,7 @@ function Hensa.Home()
                 ["Bank"] = Identity["Bank"],
                 ["Sex"] = Identity["Sex"],
                 ["Blood"] = Sanguine(Identity["Blood"]),
-                ["Phone"] = vRP.GetPhone(Passport),
+                ["Phone"] = Identity["Phone"] or "Chip não identificado",
                 ["Diamonds"] = Account["Gemstone"] or 0,
                 ["Medic"] = ""
             },

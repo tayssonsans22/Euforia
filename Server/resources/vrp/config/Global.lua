@@ -98,8 +98,7 @@ ArenaItens = { -- itens que são dados ao entrar na arena
 CharacterItens = { -- itens que são dados ao criar um personagem
 	["water"] = 2,
 	["sandwich"] = 5,
-	["cellphone"] = 1,
-	["bankcard"] = 1
+	["cellphone"] = 1
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- GROUPBLIPS

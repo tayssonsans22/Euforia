@@ -1564,7 +1564,7 @@ Use = {
 					end)
 				end
 
-				if vRP.Task(source, 5, 10000) then
+				-- if vRP.Task(source, 5, 10000) then
 					Active[Passport] = os.time() + 15
 					TriggerClientEvent("Progress", source, "Reparando", 15000)
 
@@ -1590,7 +1590,7 @@ Use = {
 
 						Wait(100)
 					until not Active[Passport]
-				end
+				-- end
 
 				local Players = vRPC.Players(source)
 				for _, v in pairs(Players) do
@@ -2882,7 +2882,7 @@ Use = {
 					end)
 				end
 
-				if vRP.Task(source, 5, 10000) then
+				-- if vRP.Task(source, 5, 10000) then
 					Active[Passport] = os.time() + 15
 					TriggerClientEvent("Progress", source, "Reparando", 15000)
 
@@ -2902,7 +2902,7 @@ Use = {
 
 						Wait(100)
 					until not Active[Passport]
-				end
+				-- end
 
 				local Players = vRPC.Players(source)
 				for _, v in pairs(Players) do

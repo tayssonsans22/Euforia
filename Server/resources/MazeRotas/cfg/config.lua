@@ -774,62 +774,6 @@ config.rotas = {
             vector3(871.96, -1146.26, 25.98),
         }
     },   
-    ['Mafia02-Handcuff'] = { 
-        ['items'] = { 
-            ["aluminum"] = math.random( 20,40),
-            ["sheetmetal"] = math.random( 5,10)
-        },
-        ['perm'] = {  -- Permissões para o BLIP
-            ["Mafia02"] = vector3(-2677.54,1336.21,144.25),
-        },
-        ['locs'] = { -- Localizações
-            vector3(2662.41, 3265.6, 55.23),
-            vector3(2889.64, 4391.28, 50.45),
-            vector3(1961.04, 5184.95, 47.94),
-            vector3(1741.38, 6419.58, 35.05),
-            vector3(9.68, 6506.15, 31.53),
-            vector3(-687.04, 5793.97, 17.32),
-            vector3(-2192.91, 4286.58, 49.17),
-            vector3(-1102.06, 2721.8, 18.8),
-            vector3(173.64, 2778.99, 46.07),
-            vector3(839.44, 2176.73, 52.28),
-            vector3(379.93, 356.75, 102.58),
-            vector3(-613.23, 323.81, 82.26),
-            vector3(-1772.21, -378.3, 46.49),
-            vector3(-2205.69, -373.83, 13.31),
-            vector3(-683.44, -876.25, 24.5),
-            vector3(109.19, -1797.89, 27.08),
-            vector3(871.96, -1146.26, 25.98),
-        }
-    },
-    ['Mafia02-Handcuff'] = { 
-        ['items'] = { 
-            ["aluminum"] = math.random( 20,40),
-            ["sheetmetal"] = math.random( 5,10)
-        },
-        ['perm'] = {  -- Permissões para o BLIP
-            ["Mafia02"] = vector3(-2677.54,1336.21,144.25),
-        },
-        ['locs'] = { -- Localizações
-            vector3(2662.41, 3265.6, 55.23),
-            vector3(2889.64, 4391.28, 50.45),
-            vector3(1961.04, 5184.95, 47.94),
-            vector3(1741.38, 6419.58, 35.05),
-            vector3(9.68, 6506.15, 31.53),
-            vector3(-687.04, 5793.97, 17.32),
-            vector3(-2192.91, 4286.58, 49.17),
-            vector3(-1102.06, 2721.8, 18.8),
-            vector3(173.64, 2778.99, 46.07),
-            vector3(839.44, 2176.73, 52.28),
-            vector3(379.93, 356.75, 102.58),
-            vector3(-613.23, 323.81, 82.26),
-            vector3(-1772.21, -378.3, 46.49),
-            vector3(-2205.69, -373.83, 13.31),
-            vector3(-683.44, -876.25, 24.5),
-            vector3(109.19, -1797.89, 27.08),
-            vector3(871.96, -1146.26, 25.98),
-        }
-    },
     ['Mafia02-Pistol'] = { 
         ['items'] = { 
             ["pistolbody"] = 1,
@@ -837,10 +781,11 @@ config.rotas = {
             ["copper"] = math.random(20,40),
             ["plastic"] = math.random(10,20),
             ["glass"] = math.random(10,20),
-            ["rubber"] = math.random(10,20)
+            ["rubber"] = math.random(10,20),
+            ["sheetmetal"] = math.random( 5,10)
         },
         ['perm'] = {  -- Permissões para o BLIP
-            ["Mafia02"] = vector3(952.41,-115.6,75.02),
+            ["Mafia02"] = vector3(-1526.24,127.14,50.04),
         },
         ['locs'] = { -- Localizações
             vector3(2662.41, 3265.6, 55.23),

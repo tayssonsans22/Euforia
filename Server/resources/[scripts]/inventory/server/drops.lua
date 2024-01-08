@@ -56,13 +56,13 @@ function Hensa.Drops(Item,Slot,Amount)
 	if Passport and not Active[Passport] and not itemBlock(Item) and not BlockDrops(Item) and not Player(source)["state"]["Handcuff"] and not exports["hud"]:Wanted(Passport) and not vRPC.InsideVehicle(source) then
 		Active[Passport] = true
 
-		if vRP.CheckDamaged(Item) then
-			TriggerClientEvent("Notify", source, "amarelo", "Utilize as <b>Lixeiras</b> para jogar itens vencidos.", "Atenção", 5000)
-			TriggerClientEvent("inventory:Update",source,"Backpack")
-			Active[Passport] = nil
+		-- if vRP.CheckDamaged(Item) then
+		-- 	TriggerClientEvent("Notify", source, "amarelo", "Utilize as <b>Lixeiras</b> para jogar itens vencidos.", "Atenção", 5000)
+		-- 	TriggerClientEvent("inventory:Update",source,"Backpack")
+		-- 	Active[Passport] = nil
 
-			return false
-		end
+		-- 	return false
+		-- end
 
 		if vRP.TakeItem(Passport,Item,Amount,false,Slot) then
 			if not Drops[Route] then
