@@ -573,7 +573,7 @@ CreateThread(function()
 		heading = 0.0,
 		useZ = true
 	}, {
-		Distance = 1.0,
+		Distance = 3.0,
 		options = {
 			{
 				event = "dynamic:Work",
@@ -588,7 +588,7 @@ CreateThread(function()
 		heading = 0.0,
 		useZ = true
 	}, {
-		Distance = 1.0,
+		Distance = 3.0,
 		options = {
 			{
 				event = "dynamic:Work",
@@ -1270,7 +1270,7 @@ end)
 function TargetEnable()
 	if LocalPlayer["state"]["Active"] and not IsPauseMenuActive() then
 		local Ped = PlayerPedId()
-		if (not LocalPlayer["state"]["Admin"] and LocalPlayer["state"]["Charizard"]) or LocalPlayer["state"]["Camera"] or LocalPlayer["state"]["Freecam"] or LocalPlayer["state"]["Carry"] or not MumbleIsConnected() or LocalPlayer["state"]["Buttons"] or LocalPlayer["state"]["Commands"] or LocalPlayer["state"]["Handcuff"] or Sucess or IsPedArmed(Ped,6) or IsPedInAnyVehicle(Ped) then
+		if (not LocalPlayer["state"]["Admin"] and LocalPlayer["state"]["Charizard"]) or LocalPlayer["state"]["Camera"] or LocalPlayer["state"]["Freecam"] or LocalPlayer["state"]["Carry"] or not MumbleIsConnected() or LocalPlayer["state"]["Buttons"] or LocalPlayer["state"]["Commands"] or LocalPlayer["state"]["Handcuff"] or Sucess or --[[ IsPedArmed(Ped,6) or ]] IsPedInAnyVehicle(Ped) then
 			return
 		end
 

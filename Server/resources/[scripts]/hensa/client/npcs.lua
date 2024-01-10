@@ -286,11 +286,6 @@ local NPCs = {
 		Coords = { -544.76, -185.81, 52.2, 303.31 },
 		Model = "ig_barry",
 		anim = { "amb@lo_res_idles@", "world_human_lean_male_foot_up_lo_res_base" }
-	}, { -- Weeds
-		Distance = 100,
-		Coords = { -1174.54, -1571.4, 4.35, 124.73 },
-		Model = "g_f_y_ballas_01",
-		anim = { "amb@lo_res_idles@", "world_human_lean_male_foot_up_lo_res_base" }
 	}, { -- Transporter
 		Distance = 100,
 		Coords = { 232.55, 202.84, 105.4, 161.58 },

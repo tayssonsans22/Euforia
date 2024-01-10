@@ -454,7 +454,7 @@ CreateThread(function()
 
 					local Vehicle = GetVehiclePedIsUsing(Ped)
 					local Speed = GetEntitySpeed(Vehicle) * 2.236936
-					if GetVehicleDoorLockStatus(Vehicle) >= 2 or SeatbeltLock then
+					if SeatbeltLock then
 						DisableControlAction(0,75,true)
 						DisableControlAction(27,75,true)
 					end

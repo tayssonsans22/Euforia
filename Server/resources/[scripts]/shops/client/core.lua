@@ -146,7 +146,7 @@ local List = {
 	{ -1193.39,-893.57,14.01,  "BurgerShot",         false, 2.0,  false, "Restaurante" },
 	{ -1191.47,-894.09,14.03,  "BurgerShot",         false, 2.0,  false, "Restaurante" },
 	{ -1197.45,-892.46,13.99,  "BurgerShot",         false, 2.0,  false, "Restaurante" },
-	{ -1174.54, -1571.4,  4.35,   "Weeds",       false, 2.0,  true,  "Loja de Tabacos" },
+	-- { -1174.54, -1571.4,  4.35,   "Weeds",       false, 2.0,  true,  "Loja de Tabacos" },
 	---{ 990.22,   32.26,    71.87,  "Casino",      false, 2.0,  true,  "Loja de Tickets" },
 	-- -{ 989.35,   30.86,    71.86,  "Casino",      false, 2.0,  true,  "Loja de Tickets" },
 	{ 981.33,   26.57,    71.74,  "Drinks",      false, 2.0,  true,  "Bar" },

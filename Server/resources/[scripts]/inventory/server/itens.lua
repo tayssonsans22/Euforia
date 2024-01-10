@@ -5523,7 +5523,31 @@ Use = {
 				vRPC.PlayAnim(source, false, { "amb@medic@standing@kneel@idle_a", "idle_a" }, true)
 				vRPC.CreateObjects(source, "anim@heists@box_carry@", "idle", "imp_prop_impexp_tyre_01a", 49, 28422, -0.02, -0.1, 0.2, 10.0, 0.0, 0.0)
 
-				if vRP.Task(source, 3, 7500) then
+				if vRP.HasGroup(Passport,"Mecanico",5) then 
+					if vRP.Task(source, 3, 7500) then
+						Active[Passport] = os.time() + 10
+						Player(source)["state"]["Buttons"] = true
+						TriggerClientEvent("Progress", source, "Colocando", 10000)
+
+						repeat
+							if Active[Passport] and os.time() >= parseInt(Active[Passport]) then
+								Active[Passport] = nil
+								Player(source)["state"]["Buttons"] = false
+
+								if vRP.TakeItem(Passport,Full,1,true,Slot) then
+									local Players = vRPC.Players(source)
+									for _, v in pairs(Players) do
+										async(function()
+											TriggerClientEvent("inventory:repairTyre", v, Network, Tyre, Plate)
+										end)
+									end
+								end
+							end
+
+							Wait(100)
+						until not Active[Passport]
+					end
+				else 
 					Active[Passport] = os.time() + 10
 					Player(source)["state"]["Buttons"] = true
 					TriggerClientEvent("Progress", source, "Colocando", 10000)

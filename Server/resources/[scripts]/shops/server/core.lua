@@ -47,13 +47,13 @@ local List = {
 			["fidentity"] = 7500
 		}
 	},
-	["Weeds"] = {
-		["Mode"] = "Buy",
-		["Type"] = "Cash",
-		["List"] = {
-			["silk"] = 5
-		}
-	},
+	-- ["Weeds"] = {
+	-- 	["Mode"] = "Buy",
+	-- 	["Type"] = "Cash",
+	-- 	["List"] = {
+	-- 		["silk"] = 5
+	-- 	}
+	-- },
 	["Casino"] = {
 		["Mode"] = "Buy",
 		["Type"] = "Cash",

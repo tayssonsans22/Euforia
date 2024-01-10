@@ -172,6 +172,7 @@ function Hensa.CreateVehicle(Model, Network, Engine, Health, Customize, Windows,
 			SetVehicleEngineHealth(Vehicle, Engine + 0.0)
 			SetVehicleHasBeenOwnedByPlayer(Vehicle, true)
 			SetVehicleNeedsToBeHotwired(Vehicle, false)
+			SetVehicleDoorsLocked(Vehicle, 2)
 			DecorSetInt(Vehicle, "Player_Vehicle", -1)
 			SetVehicleOnGroundProperly(Vehicle)
 			SetVehRadioStation(Vehicle, "OFF")
