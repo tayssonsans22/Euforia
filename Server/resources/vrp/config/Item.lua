@@ -2443,21 +2443,21 @@ local List = {
 		["Index"] = "plastic",
 		["Name"] = "Plástico",
 		["Type"] = "Comum",
-		["Weight"] = 0.045,
+		["Weight"] = 0.025,
 		["Economy"] = 20
 	},
 	["glass"] = {
 		["Index"] = "glass",
 		["Name"] = "Vidro",
 		["Type"] = "Comum",
-		["Weight"] = 0.045,
+		["Weight"] = 0.025,
 		["Economy"] = 20
 	},
 	["rubber"] = {
 		["Index"] = "rubber",
 		["Name"] = "Borracha",
 		["Type"] = "Comum",
-		["Weight"] = 0.045,
+		["Weight"] = 0.025,
 		["Economy"] = 20
 	},
 	["aluminum"] = {
@@ -2471,14 +2471,14 @@ local List = {
 		["Index"] = "titanium",
 		["Name"] = "Titânio",
 		["Type"] = "Comum",
-		["Weight"] = 0.150,
+		["Weight"] = 0.075,
 		["Economy"] = 275
 	},
 	["copper"] = {
 		["Index"] = "copper",
 		["Name"] = "Cobre",
 		["Type"] = "Comum",
-		["Weight"] = 0.065,
+		["Weight"] = 0.035,
 		["Economy"] = 30
 	},
 	["ziper"] = {
