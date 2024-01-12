@@ -265,7 +265,7 @@ Groups = {
 		["Hierarchy"] = { "Chefe" },
 		["Salary"] = { 2250 },
 		["Service"] = {}
-	}
+	},
 	["Verify"] = {
 		["Parent"] = {
 			["Verify"] = true
