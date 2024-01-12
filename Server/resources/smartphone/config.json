@@ -14,7 +14,7 @@
     },
     "call_mode": "pma-voice",
     "webhookURL": "https://discord.com/api/webhooks/1172969738540953620/3hOOLO54Xg82_yLZShtF_VxKeRyNdl8a3T0oTmBHOTrSavoQg0-7jcvofYrdqOen7XKL",
-    "instagram_verify": "Administrador",
+    "instagram_verify": "Verify",
     "instagram_accounts": {
         "*": 2
     },

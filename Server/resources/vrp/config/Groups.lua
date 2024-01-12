@@ -266,4 +266,12 @@ Groups = {
 		["Salary"] = { 2250 },
 		["Service"] = {}
 	}
+	["Verify"] = {
+		["Parent"] = {
+			["Verify"] = true
+		},
+		["Hierarchy"] = { "Verificado" },
+		["Salary"] = {},
+		["Service"] = {}
+	}
 }
